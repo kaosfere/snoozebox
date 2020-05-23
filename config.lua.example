@@ -1,0 +1,18 @@
+snoozebox = require "snoozebox"
+
+account = IMAP {
+    server = 'imap.host.com',
+    username = 'username',
+    password = 'yeahright',
+    ssl = 'auto'
+}
+
+snooze_config = {
+    account = account,
+    base_folder = "SnoozeBox",
+    snoozed_tag = "Snoozed",
+    expired_tag = "SnoozeExpired"
+}
+
+snoozebox.go_to_sleep(snooze_config)
+snoozebox.wake_up(snooze_config)
