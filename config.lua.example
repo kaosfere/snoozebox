@@ -1,10 +1,10 @@
 snoozebox = require "snoozebox"
 
 account = IMAP {
-    server = 'imap.host.com',
-    username = 'username',
-    password = 'yeahright',
-    ssl = 'auto'
+    server = "imap.host.com",
+    username = "username",
+    password = "yeahright",
+    ssl = "auto"
 }
 
 snooze_config = {

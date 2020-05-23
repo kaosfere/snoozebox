@@ -3,7 +3,7 @@ local snoozebox = {}
 local function start_of_day(timestamp)
     local parts = os.date("*t", timestamp)
     local sod_timestamp = os.time({
-        year=parts.year,
+        year = parts.year,
         month = parts.month,
         day = parts.day,
         hour = 0

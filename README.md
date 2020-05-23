@@ -20,7 +20,7 @@ For additional filtering options, configurable tags are applied both to messages
 
 ## configuration
 
-The two public functions in `snoozebox.lua` take as an argument a table with the following items:
+Require `snoozebox.lua` in your imapfilter configuration file.  The two public functions (`go_to_sleep` and `wake_up`) both take as an argument a table with the following items:
 
 * account:  an imapfilter account object, as returned by `IMAP()`
 * base_folder: the name of the parent folder for your snooze-folders and holding pen
