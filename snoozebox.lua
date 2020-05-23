@@ -41,9 +41,9 @@ function snoozebox.go_to_sleep(config)
 
         local sleep_secs = tonumber(sleep_count) * mult
 
-        -- If we're given a named interval, measure it from the start of the
-        -- current day.   Otherwise just add seconds to now.
-        if mult > 1 then
+        -- If we're given a named interval larger than hour, measure it from
+        -- the start of the current day.   Otherwise just add seconds to now.
+        if mult > 3600 then
             start_time = start_of_day(os.time())
         else
             start_time = os.time()
